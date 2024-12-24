@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Product } from '../types/product'
+import { fetchProducts } from '../api/route'
 
 interface ProductContextType {
   products: Product[]
@@ -31,21 +32,19 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 8 // Number of products per page
 
-  const fetchProducts = async () => {
-    const response = await fetch(`/api/products?page=${currentPage}&pageSize=${pageSize}&search=${searchTerm}&stockFilter=${stockFilter}`)
-    if (!response.ok) {
-      throw new Error('Network response was not ok')
-    }
-    return response.json()
-  }
+  // const fetchProducts = async (): Promise<Product[]> => {
+  //   const response = await fetch(`/api/products?page=${currentPage}&pageSize=${pageSize}&search=${searchTerm}&stockFilter=${stockFilter}`)
+  //   if (!response.ok) {
+  //     throw new Error('Network response was not ok')
+  //   }
+  //   return response.json()
+  // }
 
-  const { data, isLoading, error } = useQuery(
-    ['products', currentPage, searchTerm, stockFilter],
-    fetchProducts,
-    {
-      keepPreviousData: true,
-    }
-  )
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['products', currentPage, searchTerm, stockFilter],
+    queryFn: () => fetchProducts(currentPage, pageSize, searchTerm, stockFilter),
+  });
+  
 
   const products = data?.products || []
   const totalPages = data?.totalPages || 1
