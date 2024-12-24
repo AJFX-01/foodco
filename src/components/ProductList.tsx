@@ -18,14 +18,20 @@ const ProductList: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Product Catalog</h1>
+      <div className='flex flex-row justify-between'>
+        <h1 className="text-green-500 text-3xl font-bold mb-8">FoodCo</h1>
+        <h1 className="text-gray-700 text-2xl font-bold mb-8">Good Day, Ajegbomogun!</h1>
+      </div>
       <SearchFilter />
-      <button
-        onClick={() => setIsAddFormOpen(true)}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4 transition duration-300 ease-in-out transform hover:scale-105"
-      >
-        Add New Product
-      </button>
+      <div className='flex flex-row justify-between'>
+        <h2 className="text-gray-700 text-xm font-bold">Products ({products.length})</h2>
+        <button
+          onClick={() => setIsAddFormOpen(true)}
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 transition duration-300 ease-in-out transform hover:scale-105"
+        >
+          Add New Product
+        </button>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <ProductCard

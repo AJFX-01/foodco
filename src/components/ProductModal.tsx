@@ -45,13 +45,13 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
             <p className="text-gray-600 mb-4">{product.description}</p>
             <p className="text-xl font-semibold mb-2">${product.price.toFixed(2)}</p>
             <p className={`mb-4 ${
-              product.stockStatus === 'In Stock' ? 'text-green-500' : 'text-red-500'
+              product.stockStatus === 'In Stock' ? 'text-blue-500' : 'text-red-500'
             }`}>
               {product.stockStatus}
             </p>
             <button
               onClick={() => setIsEditing(true)}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
             >
               Edit Product
             </button>
