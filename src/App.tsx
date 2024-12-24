@@ -1,6 +1,5 @@
 
 import './App.css'
-import React from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ProductProvider } from './context/ProductContext'
 import ProductList from '../src/components/ProductList'
