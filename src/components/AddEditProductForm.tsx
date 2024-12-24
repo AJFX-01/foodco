@@ -71,7 +71,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 transition-opacity duration-300 ease-in-out">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ease-in-out">
         <form onSubmit={handleSubmit} className="p-6">
-          <h2 className="text-2xl font-bold mb-4">{product ? 'Edit Product' : 'Add New Product'}</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">{product ? 'Edit Product' : 'Add New Product'}</h2>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
               Product Name
@@ -82,7 +82,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              className="w-full px-3 py-2 text-gray-700 border bg-gray-50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
             />
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
@@ -95,7 +95,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
               name="description"
               value={formData.description}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              className="w-full px-3 py-2 border  text-gray-700  bg-gray-50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
               rows={4}
             />
             {errors.description && <p className="text-red-500 text-sm mt-1">{errors.description}</p>}
@@ -110,7 +110,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
               name="price"
               value={formData.price}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              className="w-full px-3  text-gray-700  bg-gray-50 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
               min="0"
               step="0.01"
             />
@@ -125,7 +125,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
               name="stockStatus"
               value={formData.stockStatus}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              className="w-full px-3 py-2 border  text-gray-700  bg-gray-50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
             >
               <option value="In Stock">In Stock</option>
               <option value="Out of Stock">Out of Stock</option>
@@ -141,7 +141,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
               name="imageUrl"
               value={formData.imageUrl}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              className="w-full px-3 py-2  text-gray-700 bg-gray-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
             />
             {errors.imageUrl && <p className="text-red-500 text-sm mt-1">{errors.imageUrl}</p>}
           </div>
