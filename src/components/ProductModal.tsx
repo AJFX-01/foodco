@@ -12,17 +12,18 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
   const [isEditing, setIsEditing] = useState(false)
 
   if (!isOpen) return null
+  
 
   return (
+    isEditing ? (
+      <AddEditProductForm
+      product={product}
+      isOpen={isEditing}
+      onClose={() => setIsEditing(false)}
+    />
+    ) : (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 transition-opacity duration-300 ease-in-out">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ease-in-out">
-        {isEditing ? (
-          <AddEditProductForm
-            product={product}
-            isOpen={isEditing}
-            onClose={() => setIsEditing(false)}
-          />
-        ) : (
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
               <h2 className="text-2xl font-bold">{product.name}</h2>
@@ -56,9 +57,9 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
               Edit Product
             </button>
           </div>
-        )}
       </div>
     </div>
+    )
   )
 }
 
