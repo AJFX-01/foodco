@@ -31,7 +31,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ajfx-01/foodco.git
+   git clone https://github.com/AJFX-01/foodco.git
    cd product-catalog-management
    ```
 
