@@ -159,6 +159,14 @@
       "price": 599.99,
       "stockStatus": "In Stock",
       "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "db05",
+      "name": "Creative Services",
+      "description": "This project is a responsive and user-friendly product catalog management interface built with React and Vite",
+      "price": "199.0",
+      "stockStatus": "Out of Stock",
+      "imageUrl": "https://via.placeholder.com/300"
     }
   ]
 }
