@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useMutation, useQueryClient } from '@tanstack/react-query'
+// import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { Product } from '../types/product'
 
 interface AddEditProductFormProps {
@@ -9,7 +9,7 @@ interface AddEditProductFormProps {
 }
 
 const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen, onClose }) => {
-  const queryClient = useQueryClient()
+  // const queryClient = useQueryClient()
   const [formData, setFormData] = useState<Partial<Product>>(
     product || {
       name: '',
@@ -23,57 +23,57 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
-    setFormData((prev: ) => ({ ...prev, [name]: value }))
+    setFormData((prev ) => ({ ...prev, [name]: value }))
     setErrors((prev) => ({ ...prev, [name]: '' }))
   }
 
-  const addProductMutation = useMutation(
-    (newProduct: Omit<Product, 'id'>) => fetch('/api/products', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newProduct),
-    }).then(res => res.json()),
-    {
-      onSuccess: () => {
-        queryClient.invalidateQueries(['products'])
-        onClose()
-      },
-    }
-  )
+  // const addProductMutation = useMutation(
+  //   // (newProduct: Omit<Product, 'id'>) => fetch('/api/products', {
+  //   //   method: 'POST',
+  //   //   headers: { 'Content-Type': 'application/json' },
+  //   //   body: JSON.stringify(newProduct),
+  //   // }).then(res => res.json()),
+  //   // {
+  //   //   onSuccess: () => {
+  //   //     queryClient.invalidateQueries(['products'])
+  //   //     onClose()
+  //   //   },
+  //   // }
+  // )
 
-  const updateProductMutation = useMutation(
-    (updatedProduct: Product) => fetch(`/api/products/${updatedProduct.id}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(updatedProduct),
-    }).then(res => res.json()),
-    {
-      onSuccess: () => {
-        queryClient.invalidateQueries(['products'])
-        onClose()
-      },
-    }
-  )
+  // const updateProductMutation = useMutation(
+  //   (updatedProduct: Product) => fetch(`/api/products/${updatedProduct.id}`, {
+  //     method: 'PUT',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify(updatedProduct),
+  //   }).then(res => res.json()),
+  //   {
+  //     onSuccess: () => {
+  //       queryClient.invalidateQueries(['products'])
+  //       onClose()
+  //     },
+  //   }
+  // )
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const newErrors: Partial<Record<keyof Product, string>> = {}
+    // const newErrors: Partial<Record<keyof Product, string>> = {}
 
-    if (!formData.name) newErrors.name = 'Name is required'
-    if (!formData.description) newErrors.description = 'Description is required'
-    if (!formData.price || formData.price <= 0) newErrors.price = 'Price must be greater than 0'
-    if (!formData.imageUrl) newErrors.imageUrl = 'Image URL is required'
+    // if (!formData.name) newErrors.name = 'Name is required'
+    // if (!formData.description) newErrors.description = 'Description is required'
+    // if (!formData.price || formData.price <= 0) newErrors.price = 'Price must be greater than 0'
+    // if (!formData.imageUrl) newErrors.imageUrl = 'Image URL is required'
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors)
-      return
-    }
+    // if (Object.keys(newErrors).length > 0) {
+    //   setErrors(newErrors)
+    //   return
+    // }
 
-    if (product) {
-      updateProductMutation.mutate({ ...product, ...formData } as Product)
-    } else {
-      addProductMutation.mutate(formData as Omit<Product, 'id'>)
-    }
+    // if (product) {
+    //   updateProductMutation.mutate({ ...product, ...formData } as Product)
+    // } else {
+    //   addProductMutation.mutate(formData as Omit<Product, 'id'>)
+    // }
   }
 
   if (!isOpen) return null
