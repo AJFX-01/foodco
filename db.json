@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone X",
+      "description": "The latest smartphone with advanced features.",
+      "price": 799.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "2",
+      "name": "Laptop Pro",
+      "description": "High-performance laptop for professionals.",
+      "price": 1299.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "3",
+      "name": "Wireless Earbuds",
+      "description": "Premium sound quality with noise cancellation.",
+      "price": 149.99,
+      "stockStatus": "Out of Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "4",
+      "name": "Gaming Monitor",
+      "description": "Ultra-wide monitor with 144Hz refresh rate.",
+      "price": 499.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "5",
+      "name": "Mechanical Keyboard",
+      "description": "RGB backlit keyboard with customizable keys.",
+      "price": 89.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "6",
+      "name": "Noise-Canceling Headphones",
+      "description": "Immersive sound experience with active noise cancellation.",
+      "price": 299.99,
+      "stockStatus": "Out of Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "7",
+      "name": "Smartwatch Ultra",
+      "description": "Track your health and fitness with ease.",
+      "price": 249.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "8",
+      "name": "4K Action Camera",
+      "description": "Capture your adventures in stunning 4K resolution.",
+      "price": 199.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "9",
+      "name": "Portable Bluetooth Speaker",
+      "description": "High-quality sound in a compact size.",
+      "price": 59.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "10",
+      "name": "Smart Thermostat",
+      "description": "Control your home temperature remotely.",
+      "price": 149.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "11",
+      "name": "Wireless Charger Pad",
+      "description": "Fast charging for all your devices.",
+      "price": 39.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "12",
+      "name": "Robot Vacuum Cleaner",
+      "description": "Effortless cleaning with smart mapping technology.",
+      "price": 399.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "13",
+      "name": "Smart Light Bulbs",
+      "description": "Customize your lighting with smart controls.",
+      "price": 49.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "14",
+      "name": "Electric Toothbrush",
+      "description": "Advanced cleaning with smart sensors.",
+      "price": 99.99,
+      "stockStatus": "Out of Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "15",
+      "name": "Fitness Tracker",
+      "description": "Monitor your activity and heart rate.",
+      "price": 79.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "16",
+      "name": "Streaming Stick",
+      "description": "Stream your favorite shows in 4K.",
+      "price": 49.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "17",
+      "name": "External Hard Drive",
+      "description": "Store and back up your files with ease.",
+      "price": 119.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "18",
+      "name": "Smart Doorbell",
+      "description": "See who's at your door from anywhere.",
+      "price": 199.99,
+      "stockStatus": "Out of Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "19",
+      "name": "Drone Pro",
+      "description": "Capture stunning aerial footage.",
+      "price": 999.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "20",
+      "name": "Smart Glasses",
+      "description": "Stay connected with AR technology.",
+      "price": 599.99,
+      "stockStatus": "In Stock",
+      "imageUrl": "https://via.placeholder.com/300"
+    }
+  ]
+}

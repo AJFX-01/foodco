@@ -4,6 +4,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AddEditProductForm from '../AddEditProductForm';
 import { Product } from '../../types/types';
 
+
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
