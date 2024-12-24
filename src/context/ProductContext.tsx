@@ -1,30 +1,10 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { Product } from '../types/product'
 import { fetchProducts } from '../api/route'
+import { ProductContext } from './useContextHook'
 
-interface ProductContextType {
-  products: Product[]
-  isLoading: boolean
-  error: Error | null
-  searchTerm: string
-  setSearchTerm: React.Dispatch<React.SetStateAction<string>>
-  stockFilter: string
-  setStockFilter: React.Dispatch<React.SetStateAction<string>>
-  currentPage: number
-  setCurrentPage: React.Dispatch<React.SetStateAction<number>>
-  totalPages: number
-}
 
-const ProductContext = createContext<ProductContextType | undefined>(undefined)
 
-export const useProductContext = () => {
-  const context = useContext(ProductContext)
-  if (!context) {
-    throw new Error('useProductContext must be used within a ProductProvider')
-  }
-  return context
-}
 
 export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('')

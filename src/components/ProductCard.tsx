@@ -1,5 +1,5 @@
 import React from 'react'
-import { Product } from '../types/product'
+import { Product } from '../types/types'
 
 interface ProductCardProps {
   product: Product
@@ -20,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails }) => 
         <h2 className="text-xl font-semibold mb-2 text-gray-500">{product.name}</h2>
         <p className="text-gray-600 mb-2">${product.price.toFixed(2)}</p>
         <p className={`mb-4 ${
-          product.stockStatus === 'In Stock' ? 'text-green-500' : 'text-red-500'
+          product.stockStatus === 'In Stock' ? 'text-purple-500' : 'text-red-500'
         }`}>
           {product.stockStatus}
         </p>

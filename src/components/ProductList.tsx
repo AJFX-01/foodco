@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { useProductContext } from '../context/ProductContext'
+import { useProductContext } from '../context/useContextHook'
 import ProductCard from './ProductCard'
 import ProductModal from './ProductModal'
 import SearchFilter from './SearchFilter'
 import AddEditProductForm from './AddEditProductForm'
 import Pagination from './Pagination'
-import { Product } from '../types/product'
+import { Product } from '../types/types'
 
 const ProductList: React.FC = () => {
   const { products, isLoading, error, currentPage, setCurrentPage, totalPages } = useProductContext()

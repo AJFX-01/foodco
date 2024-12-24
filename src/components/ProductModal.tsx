@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Product } from '../types/product'
+import { Product } from '../types/types'
 import AddEditProductForm from './AddEditProductForm'
 
 interface ProductModalProps {

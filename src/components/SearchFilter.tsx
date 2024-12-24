@@ -1,5 +1,5 @@
 import React from 'react'
-import { useProductContext } from '../context/ProductContext'
+import { useProductContext } from '../context/useContextHook'
 
 const SearchFilter: React.FC = () => {
   const { searchTerm, setSearchTerm, stockFilter, setStockFilter } = useProductContext()
