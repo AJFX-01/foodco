@@ -13,7 +13,7 @@ const ProductList: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isAddFormOpen, setIsAddFormOpen] = useState(false)
 
-  if (isLoading) return <div className="text-center py-8">Loading...</div>
+  if (isLoading) return <div className="text-center py-8 text-green-800">Loading...</div>
   if (error) return <div className="text-center py-8 text-red-500">Error: {error.message}</div>
 
   return (
@@ -27,7 +27,7 @@ const ProductList: React.FC = () => {
         <h2 className="text-gray-700 text-xm font-bold">Products ({products.length})</h2>
         <button
           onClick={() => setIsAddFormOpen(true)}
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 transition duration-300 ease-in-out transform hover:scale-105"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mb-4 transition duration-300 ease-in-out transform hover:scale-105"
         >
           Add New Product
         </button>

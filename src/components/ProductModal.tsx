@@ -51,7 +51,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
             </p>
             <button
               onClick={() => setIsEditing(true)}
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+              className="justify-end  bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               Edit Product
             </button>

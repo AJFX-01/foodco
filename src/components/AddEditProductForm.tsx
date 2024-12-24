@@ -71,7 +71,7 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 transition-opacity duration-300 ease-in-out">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ease-in-out">
         <form onSubmit={handleSubmit} className="p-6">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">{product ? 'Edit Product' : 'Add New Product'}</h2>
+          <h2 className="text-2xl font-bold mb-4 text-green-500">{product ? 'Edit Product' : 'Add New Product'}</h2>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
               Product Name
@@ -149,13 +149,13 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
             <button
               type="button"
               onClick={onClose}
-              className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded mr-2 transition duration-300 ease-in-out transform hover:scale-105"
+              className="border-green-500 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mr-2 transition duration-300 ease-in-out transform hover:scale-105"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               {product ? 'Update Product' : 'Add Product'}
             </button>
