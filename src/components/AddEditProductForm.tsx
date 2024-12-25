@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { Product } from '../types/types'
 import { addProduct, updateProduct, uploadImage } from '../api/route'
+import toast from 'react-hot-toast'
 
 interface AddEditProductFormProps {
   product: Product | null
@@ -66,7 +67,11 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
     mutationFn: (newProduct: Omit<Product, 'id'>) => addProduct(newProduct),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] })
+      toast.success("Product added successfully");
       onClose()
+    },
+    onError(error) {
+      toast.error(error.message)
     },
   })
 
@@ -74,7 +79,11 @@ const AddEditProductForm: React.FC<AddEditProductFormProps> = ({ product, isOpen
     mutationFn: (updatedProduct: Product) => updateProduct(updatedProduct),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] })
+      toast.success("Product upddated added successfully");
       onClose()
+    },
+    onError(error) {
+      toast.error(error.message)
     },
   })
 
