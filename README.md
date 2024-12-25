@@ -1,4 +1,4 @@
-# FoodCo : Product Catalog Management Interface
+# Product Catalog Management Interface
 
 ## Overview
 
@@ -30,22 +30,34 @@ This project is a responsive and user-friendly product catalog management interf
 To get started with this project, follow these steps:
 
 1. Clone the repository:
-   ```bash
+   \`\`\`bash
    git clone https://github.com/AJFX-01/foodco.git
-   cd product-catalog-management
-   ```
+   cd foodco
+   \`\`\`
 
 2. Install dependencies:
-   ```bash
+   \`\`\`bash
    npm install
-   ```
+   \`\`\`
 
-3. Start the development server:
-   ```bash
+3. Install json-server globally:
+   \`\`\`bash
+   npm install -g json-server
+   \`\`\`
+
+## Running the Development Environment
+
+1. Start json-server (in a separate terminal):
+   \`\`\`bash
+   json-server --watch db.json --port 3333
+   \`\`\`
+
+2. Start the development server:
+   \`\`\`bash
    npm run dev
-   ```
+   \`\`\`
 
-4. Open your browser and visit `http://localhost:5173` to view the application.
+3. Open your browser and visit `http://localhost:5173` to view the application.
 
 ## Usage
 
@@ -76,7 +88,7 @@ To get started with this project, follow these steps:
 
 ### Project Structure
 
-```
+\`\`\`
 src/
 ├── components/
 │   ├── AddEditProductForm.tsx
@@ -91,17 +103,28 @@ src/
 │   └── mockApi.ts
 ├── types/
 │   └── product.ts
+├── db.json
 ├── App.tsx
 └── main.tsx
-```
+\`\`\`
+
+## API Configuration
+
+The project now uses json-server to simulate a RESTful API. The API URL is configured as:
+
+\`\`\`javascript
+const API_URL = 'http://localhost:3333/products';
+\`\`\`
+
+Make sure to update this URL if you change the port or host for json-server.
 
 ### Running Tests
 
 To run the test suite, use the following command:
 
-```bash
+\`\`\`bash
 npm test
-```
+\`\`\`
 
 This will run all test files in the project using Jest and React Testing Library.
 
@@ -125,6 +148,27 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or feedback, please open an issue on the GitHub repository or contact the maintainer at [opeyemi.ajegbomogun@yahoo.com](mailto:your-email@example.com).
 
+## Thought Process
+
+While building this application, the following considerations guided the development process:
+
+1. **Component Structure**: We aimed for a modular design with reusable components to improve maintainability and scalability.
+2. **State Management**: We chose to use React Context for global state management, as it provides a good balance between simplicity and functionality for this scale of application.
+3. **Data Fetching**: React Query was selected for data fetching and caching to optimize performance and provide a smooth user experience.
+4. **UI/UX Design**: We focused on creating a clean, intuitive interface with responsive design principles to ensure usability across different devices.
+5. **Testing**: We implemented unit tests for critical components to ensure reliability and ease of future development.
+
+## Trade-offs and Limitations
+
+While the current implementation provides a solid foundation, there are some trade-offs and limitations to consider:
+
+1. **API**: The application now uses json-server as a mock API, which provides a more realistic development environment. However, for production use, integration with a real backend would still be necessary.
+2. **Scalability**: The current design may need to be revisited if the product catalog grows significantly in size or complexity.
+3. **Authentication**: The application doesn't include user authentication, which would be crucial for a real-world product management system.
+4. **Image Handling**: The current implementation doesn't support image uploads, relying instead on image URLs.
+5. **Performance Optimization**: While React Query provides some optimization, additional measures like virtualization might be necessary for very large product lists.
+
 ---
 
 Happy coding! 🚀
+
