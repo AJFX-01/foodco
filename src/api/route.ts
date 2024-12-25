@@ -53,3 +53,16 @@ export const updateProduct = async (updatedProduct: Product) => {
 
   return response.json();
 };
+
+
+export const uploadImage = async (file: File): Promise<string> => {
+  // Simulate API delay and file upload
+  await new Promise(resolve => setTimeout(resolve, 1000))
+
+  // In a real application, you would upload the file to a server or cloud storage
+  // For this mock, we'll create a fake URL
+  const fakeUrl = URL.createObjectURL(file)
+
+  // Return the fake URL
+  return fakeUrl
+}
