@@ -13,9 +13,6 @@ const ProductList: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isAddFormOpen, setIsAddFormOpen] = useState(false)
 
-  if (isLoading) return <div className="text-center py-8 text-green-800">Loading...</div>
-  if (error) return <div className="text-center py-8 text-red-500">Error: {error.message}</div>
-
   return (
     <div className="container mx-auto px-4 py-8">
       <div className='flex flex-row justify-between align-middle items-center'>
@@ -32,35 +29,46 @@ const ProductList: React.FC = () => {
           Add New Product
         </button>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            onViewDetails={() => {
-              setSelectedProduct(product)
-              setIsModalOpen(true)
-            }}
+      <>
+      {
+        isLoading ? (
+          <div className='text-gray-700 text-2xl font-bold text-center items-center'>Loading... Please Wait</div>
+        ) : error ? (
+          <div className="text-center text-2xl font-bold py-8 text-red-500 items-center">Error: {error.message}</div>
+        ) : (
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onViewDetails={() => {
+                  setSelectedProduct(product)
+                  setIsModalOpen(true)
+                }}
+              />
+            ))}
+          </div>
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
           />
-        ))}
-      </div>
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={setCurrentPage}
-      />
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-        />
+        </>
       )}
-      <AddEditProductForm
-        isOpen={isAddFormOpen}
-        onClose={() => setIsAddFormOpen(false)}
-        product={null}
-      />
+      </>
+        {selectedProduct && (
+          <ProductModal
+            product={selectedProduct}
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+          />
+        )}
+        <AddEditProductForm
+          isOpen={isAddFormOpen}
+          onClose={() => setIsAddFormOpen(false)}
+          product={null}
+        />
     </div>
   )
 }
