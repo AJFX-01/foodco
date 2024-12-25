@@ -6,7 +6,7 @@
       "description": "The latest smartphone with advanced features.",
       "price": 799.99,
       "stockStatus": "In Stock",
-      "imageUrl": "src/assets/react.svg"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8848c9c4-50ba-4ee1-adb1-cee8de71ef3b.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "description": "High-performance laptop for professionals.",
       "price": 1299.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/1257a819aac7334463acfbe230f8f3d3.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "description": "Premium sound quality with noise cancellation.",
       "price": 149.99,
       "stockStatus": "Out of Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/06156429-9c5a-429f-aece-8f9bf5f7f256.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "description": "Ultra-wide monitor with 144Hz refresh rate.",
       "price": 499.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/993f874d-a572-4b5e-abc3-73680a4c97c8.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "description": "RGB backlit keyboard with customizable keys.",
       "price": 89.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/84c8f08f-9b6f-4f51-b8a9-4167bb91ce56.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "description": "Immersive sound experience with active noise cancellation.",
       "price": 299.99,
       "stockStatus": "Out of Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/9b41099e587c22d2be5af00aeda164ab.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "description": "Track your health and fitness with ease.",
       "price": 249.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6102a31f-3a82-441a-84b5-6ee3420a44f0.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "8",
@@ -62,7 +62,7 @@
       "description": "Capture your adventures in stunning 4K resolution.",
       "price": 199.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/5d917180-6f66-4336-8fb3-52ca1c51ed9b.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "9",
@@ -70,7 +70,7 @@
       "description": "High-quality sound in a compact size.",
       "price": 59.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/c9525264-980e-4b91-b8e5-d840d813c682.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "10",
@@ -78,7 +78,7 @@
       "description": "Control your home temperature remotely.",
       "price": 149.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/open/a2c5e2765b4d45e6a8d1b7e74685de61-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "11",
@@ -86,7 +86,7 @@
       "description": "Fast charging for all your devices.",
       "price": 39.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/66cf275d-9659-4bcc-9931-caa617b45aed.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "12",
@@ -94,7 +94,7 @@
       "description": "Effortless cleaning with smart mapping technology.",
       "price": 399.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/611421e8-6843-4ab2-9386-20d8c71505ef.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "13",
@@ -102,7 +102,7 @@
       "description": "Customize your lighting with smart controls.",
       "price": 49.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/85df0bb7eaada3c5ad2e0b728a7d09a7.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "14",
@@ -110,7 +110,7 @@
       "description": "Advanced cleaning with smart sensors.",
       "price": 99.99,
       "stockStatus": "Out of Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/open/2024-06-05/1717572316831-860ee2f9bc5f4822bc7b560d1861e558-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "15",
@@ -118,7 +118,7 @@
       "description": "Monitor your activity and heart rate.",
       "price": 79.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/4e28cab4-b994-4a7a-9551-4d67f1889e10.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "16",
@@ -126,7 +126,7 @@
       "description": "Stream your favorite shows in 4K.",
       "price": 49.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/open/056d0e1a30564ade8a92d3cc5623111c-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "17",
@@ -134,7 +134,7 @@
       "description": "Store and back up your files with ease.",
       "price": 119.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/bb1f56b5-8480-4f08-884b-7427d8b7f672.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "18",
@@ -142,7 +142,7 @@
       "description": "See who's at your door from anywhere.",
       "price": 199.99,
       "stockStatus": "Out of Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/23583268-ef21-4186-96e9-99a4213ec41b.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "19",
@@ -150,7 +150,7 @@
       "description": "Capture stunning aerial footage.",
       "price": 999.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/open/56d3a1d49985464f96bdc9bd67a463af-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "20",
@@ -158,15 +158,15 @@
       "description": "Stay connected with AR technology.",
       "price": 599.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/2c09c431-64d6-4c26-90a5-a7daf61505e5.jpg?imageView2/2/w/800/q/70/format/webp"
     },
     {
       "id": "db05",
-      "name": "Creative Services",
-      "description": "This project is a responsive and user-friendly product catalog management interface built with React and Vite",
+      "name": "Educational Tablet",
+      "description": "Fun Learning Pad for Boys & Girls, Battery-Powered, Multicolor",
       "price": "199.0",
       "stockStatus": "Out of Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "https://img.kwcdn.com/product/fancy/dce4a43f-043b-4789-af47-ede68d1195aa.jpg?imageView2/2/w/800/q/70/format/webp"
     }
   ]
 }

@@ -36,7 +36,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
                 </svg>
               </button>
             </div>
-            <div className="mb-6 relative h-64">
+            <div className="mb-6 relative h-fit">
               <img
                 src={product.imageUrl}
                 alt={product.name}
