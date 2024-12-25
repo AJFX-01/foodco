@@ -18,12 +18,12 @@ const ProductList: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row justify-between align-middle items-center'>
         <h1 className="text-green-500 text-3xl font-bold mb-8">FoodCo</h1>
-        <h1 className="text-gray-700 text-2xl font-bold mb-8">Good Day, Ajegbomogun!</h1>
+        <h1 className="text-gray-700 text-xl font-bold mb-8">Good Day, Ajegbomogun!</h1>
       </div>
       <SearchFilter />
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row justify-between items-center'>
         <h2 className="text-gray-700 text-xm font-bold">Products ({products.length})</h2>
         <button
           onClick={() => setIsAddFormOpen(true)}

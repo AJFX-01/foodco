@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails }) => 
         />
       </div>
       <div className="p-4">
-        <h2 className="text-xl font-semibold mb-2 text-gray-500">{product.name}</h2>
+        <h2 className="text-xm font-semibold mb-2 text-gray-500 text-ellipsis line-clamp-1">{product.name}</h2>
         <p className="text-gray-600 mb-2">${product.price}</p>
         <p className={`mb-4 ${
           product.stockStatus === 'In Stock' ? 'text-purple-500' : 'text-red-500'

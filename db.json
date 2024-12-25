@@ -6,7 +6,7 @@
       "description": "The latest smartphone with advanced features.",
       "price": 799.99,
       "stockStatus": "In Stock",
-      "imageUrl": "https://via.placeholder.com/300"
+      "imageUrl": "src/assets/react.svg"
     },
     {
       "id": "2",
