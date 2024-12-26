@@ -1,4 +1,3 @@
-import React from 'react'
 import { Product } from '../types/types'
 
 interface ProductCardProps {

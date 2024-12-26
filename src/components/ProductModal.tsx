@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Product } from '../types/types'
 import AddEditProductForm from './AddEditProductForm'
 
@@ -26,8 +26,9 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ease-in-out">
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-bold">{product.name}</h2>
+              <h2 className="text-2xl  text-gray-500 font-bold">{product.name}</h2>
               <button
+                aria-label="Close"
                 onClick={onClose}
                 className="text-gray-500 hover:text-gray-700 transition duration-300 ease-in-out"
               >

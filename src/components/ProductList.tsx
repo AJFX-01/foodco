@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useProductContext } from '../context/useContextHook'
 import ProductCard from './ProductCard'
 import ProductModal from './ProductModal'
