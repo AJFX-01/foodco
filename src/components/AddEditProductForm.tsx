@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import  { useRef, useState } from 'react'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { Product } from '../types/types'
 import { addProduct, updateProduct, uploadImage } from '../api/route'

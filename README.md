@@ -4,6 +4,8 @@
 
 This project is a responsive, user-friendly product catalog management interface built with React and Vite. It allows users to view, add, edit, and manage products in a catalog. Key features include pagination, search functionality, and filtering options.
 
+![Product Catalog Screenshot](https://github.com/AJFX-01/foodco/blob/main/src/assets/pix2.png)
+
 ---
 
 ## Features
