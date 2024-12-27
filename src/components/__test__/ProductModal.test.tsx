@@ -40,7 +40,7 @@ describe('ProductModal', () => {
     const mockOnClose = jest.fn();
     renderWithQueryClient(<ProductModal product={mockProduct} isOpen={true} onClose={mockOnClose} />);
 
-    expect(screen.getByText('Test Product')).toBeInTheDocument();
+    expect(screen.getAllByText('Test Product')).toBeInTheDocument();
     expect(screen.getByText('This is a test product')).toBeInTheDocument();
     expect(screen.getByText('$99.99')).toBeInTheDocument();
     expect(screen.getByText('In Stock')).toBeInTheDocument();
