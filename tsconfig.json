@@ -18,7 +18,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  // "include": ["src", "setupTests.ts"],
+  //"include": ["src/**/*", "setupTests.ts"],
 //   "exclude": ["node_modules"]
 // }
 }
