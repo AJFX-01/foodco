@@ -59,7 +59,11 @@ export const uploadImage = async (file: File): Promise<string> => {
   // Simulate API delay and file upload
   await new Promise(resolve => setTimeout(resolve, 1000))
 
-  // For this mock, we'll create a fake URL
+  // For this mock, we'll create a default url for all our images, since we do not have a server to store the images
+  // i do not want to use base64, so we just use a default image 
+  // Create a fake URL for the uploaded image
+  // This URL will be used as the product's image URL in our app
+  // You'd want to replace this with a real implementation in a real-world application.
   const fakeUrl = URL.createObjectURL(file)
 
   // Return the fake URL

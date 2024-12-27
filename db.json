@@ -167,6 +167,14 @@
       "price": "199.0",
       "stockStatus": "Out of Stock",
       "imageUrl": "https://img.kwcdn.com/product/fancy/dce4a43f-043b-4789-af47-ede68d1195aa.jpg?imageView2/2/w/800/q/70/format/webp"
+    },
+    {
+      "id": "8941",
+      "name": "Macgee Keyboard",
+      "description": "Gaming Keyboard - 104 Keys, Blue Backlit with Ergonomic Round Keycaps, Wired USB for PC & Laptop, Ideal for Office and Gaming, White",
+      "price": "123",
+      "stockStatus": "In Stock",
+      "imageUrl": "blob:http://localhost:5173/54851dbe-b8f7-47dc-8051-74e4f54b84ef"
     }
   ]
 }

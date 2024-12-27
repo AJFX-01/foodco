@@ -46,7 +46,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
             </div>
             <h2 className="text-xl font-semibold mb-2 text-gray-500">{product.name}</h2>
             <p className="text-gray-600 ">{product.description}</p>
-            <p className="text-xl font-semibold">${product.price.toFixed(2)}</p>
+            <p className="text-xl font-semibold">${(product.price)}</p>
             <p className={`mb-4 ${
               product.stockStatus === 'In Stock' ? 'text-blue-500' : 'text-red-500'
             }`}>
